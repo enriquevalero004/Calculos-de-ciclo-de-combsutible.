@@ -1,0 +1,6 @@
+name: MOX
+kind: MOX
+description: Mixed oxide fuel with Pu from the separated stock.
+pu_content_wt: 17.99                # ESFR-SMART default, TFG reference pair (CLAUDE.md §4.3)
+pu_vector_source: stock
+u_matrix: depleted                  # assumption, see docs/assumptions.md (to confirm)
