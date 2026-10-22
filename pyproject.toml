@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fcsim"
+version = "0.0.1"
+description = "Open nuclear fuel cycle scenario simulator (design model complementary to IAEA NFCSS)."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Enrique Valero Domenech" }]
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "pydantic>=2",
+    "pyyaml",
+    "streamlit",
+    "plotly",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fcsim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

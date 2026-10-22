@@ -1,0 +1,14 @@
+# ESFR-SMART (sodium fast reactor). Sources in data/templates/README.md.
+# PLACEHOLDER = value pending from TFG Table 5-4 (Enrique).
+name: ESFR-SMART
+spectrum: fast
+fuel: MOX
+unit_power_mwe: PLACEHOLDER
+thermal_efficiency: PLACEHOLDER
+load_factor: PLACEHOLDER
+discharge_burnup_gwd_per_thm: 100.0 # TFG reference pair 17.99 % Pu / 100 GWd/t (CLAUDE.md §4.3)
+n_batches: PLACEHOLDER
+initial_core_factor: 0.63           # NFCSS value, "approx. 0.63" in CLAUDE.md §1; to confirm
+pu_content_wt: 17.99                # TFG reference pair (CLAUDE.md §4.3)
+cooling_time_y: PLACEHOLDER
+leakage_reactivity: PLACEHOLDER     # calibrated in M2

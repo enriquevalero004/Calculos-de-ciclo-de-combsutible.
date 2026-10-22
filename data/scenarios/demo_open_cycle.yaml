@@ -1,0 +1,40 @@
+# Illustrative demo scenario for the app skeleton. NOT one of the TFG phases:
+# the deployment path is arbitrary and reactor data still contain PLACEHOLDERs.
+schema_version: 1
+name: Demo open cycle
+description: Illustrative AP1000 fleet, open cycle. Not a TFG phase.
+start_year: 2025
+end_year: 2100
+fuels:
+- name: UOX
+  kind: UOX
+  enrichment_wt: 4.5
+reactor_types:
+- name: AP1000
+  spectrum: thermal
+  fuel: UOX
+  unit_power_mwe: 1117.0
+  thermal_efficiency: PLACEHOLDER
+  load_factor: PLACEHOLDER
+  discharge_burnup_gwd_per_thm: 60.0
+  n_batches: PLACEHOLDER
+  initial_core_factor: PLACEHOLDER
+  enrichment_wt: 4.5
+  tails_assay_wt: PLACEHOLDER
+  cooling_time_y: PLACEHOLDER
+  leakage_reactivity: PLACEHOLDER
+fleets:
+- name: LWR fleet
+  reactor_type: AP1000
+  deployment:
+    segments:
+    - function: linear
+      t0_year: 2025
+      t1_year: 2050
+      p0_mwe: 100000.0
+      p1_mwe: 200000.0
+    - function: constant
+      t0_year: 2050
+      t1_year: 2100
+cycle:
+  type: open

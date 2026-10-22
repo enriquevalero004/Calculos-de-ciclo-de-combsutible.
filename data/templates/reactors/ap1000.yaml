@@ -1,0 +1,15 @@
+# AP1000 (PWR, thermal spectrum). Sources in data/templates/README.md.
+# PLACEHOLDER = value pending from TFG Table 5-4 (Enrique).
+name: AP1000
+spectrum: thermal
+fuel: UOX
+unit_power_mwe: 1117.0              # actual net unit power (CLAUDE.md §1)
+thermal_efficiency: PLACEHOLDER
+load_factor: PLACEHOLDER
+discharge_burnup_gwd_per_thm: 60.0  # TFG reference pair 4.5 % / 60 GWd/t (CLAUDE.md §4.3)
+n_batches: PLACEHOLDER
+initial_core_factor: PLACEHOLDER
+enrichment_wt: 4.5                  # TFG reference pair (CLAUDE.md §4.3)
+tails_assay_wt: PLACEHOLDER
+cooling_time_y: PLACEHOLDER
+leakage_reactivity: PLACEHOLDER     # calibrated in M2

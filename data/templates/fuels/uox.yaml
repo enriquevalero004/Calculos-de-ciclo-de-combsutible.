@@ -1,0 +1,4 @@
+name: UOX
+kind: UOX
+description: Uranium oxide fuel; composition derived from the enrichment (M1).
+enrichment_wt: 4.5                  # AP1000 default, TFG reference pair (CLAUDE.md §4.3)
